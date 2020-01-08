@@ -1,0 +1,392 @@
+
+/* 公司概况  */
+.about-box1{
+    padding: 7% 8% 0 12%;
+}
+
+
+.about-page1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.container-fluid{
+    padding: 0;
+    margin: 40px 0 0;
+}
+.about-page1 .left{
+    padding-right: 10%;
+}
+
+.about-page1 .left p{
+    font-size: 18px;
+    color: #494949;
+    line-height: 60px;
+    padding-top: 10%;
+    display: none;
+}
+.about-page1 .left div{
+    display: none;
+}
+
+.about-page1 .right img.pc{
+    margin-top: -10%;
+    width: 100%;
+    height: 570px;
+    display: none;
+}
+.about-page1 .right img.mobile{
+    width: 100%;
+    height: 217px;
+    margin-top: 36px;
+    display: none;
+}
+
+/* 核心价值 */
+.item{
+    background: #fff;
+    box-shadow: 0px 6px 12px rgba(72, 128, 255, 0.3);
+    border-radius: 7px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item>h3{
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+.item>p{
+    font-size: 12px;
+    color: #6F6F6F;
+}
+
+/* 联系我们 */
+.info{
+    display: none;
+}
+ ul.info li{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+ ul.info li img{
+    object-fit: cover;
+}
+.site{
+    width: 15px;
+    height: 20px;
+}
+.phone{
+    width: 13px;
+    height: 20px;
+}
+ .call{
+    width: 19px;
+    height: 18px;
+}
+ ul.info li div{
+    padding-left: 20px;
+}
+ ul.info li div h3{
+    font-size: 12px;
+    color: #000000;
+}
+
+ ul.info li div p{
+    font-size: 9px;
+    color: #5C5C5C;
+    padding-top: 9px;
+}
+
+/* 地图 */
+#map{
+    width:100%;
+    height:800px;
+    margin-top: 64px;
+}
+.amap-marker-label{
+    border:none;
+    padding: 0;
+}
+.site-box{
+    display: flex;
+    padding: 30px;
+    box-shadow: 0px 10px 18px rgba(72, 128, 255, 0.3);
+    background: #fff;
+}
+.site-right{
+    padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.site-right li div.img{
+    width: 24px;
+    height: 24px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-right li{
+    display: flex;
+    align-content: center;
+    padding-top: 15px;
+}
+
+.site-right li div p{
+    color: #000000;
+    font-size: 18px;
+    line-height: 30px;
+}
+.site-right li div{
+    color: #000000;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+@media(max-width:576px){
+    .amap-icon img{
+        width: 50px;
+    }
+}
+
+@media(max-width:767px){
+    .container-fluid{
+        margin: 20px 0 0;
+    }
+    .about-box1{
+        padding:25px 28px 0;
+    }
+    .about-page1 .left{
+        padding-right: 0;
+    }
+    .about-page1 .left div{
+        display: block;
+        font-size: 11px;
+        color: #494949;
+        font-weight:500;
+        line-height: 27px;
+        padding-top: 0px;
+    }
+    .about-page1 .right img.mobile{
+        display: block;
+    }
+
+    .item{
+        border:1px solid rgba(183,183,183,0.4);
+        box-shadow: 0px 0px 0px #fff;
+        padding: 28px 45px;
+    }
+    .item>h3{
+        font-size: 15px;
+        padding: 30px 0 10px;
+    }
+    .about-items .col-sm-12{
+        margin-top: 10px;
+    }
+    .about-items{
+       padding-top:11px;
+    }
+    
+    .item>p{
+        line-height: 34px;
+        font-size:11px ;
+    }
+    .info{
+        display: block;
+    }
+    ul.info li div h3{
+        font-size: 12px;
+    }
+    
+     ul.info li div p{
+        font-size: 9px;
+    }
+    #map{
+        height: 300px;
+    }
+
+    
+
+}
+
+@media(min-width:576px) and (max-width:768px){
+    .about-page1 .left div{
+        font-size: 22px;
+        line-height: 40px;
+        padding-top: 0px;
+    }
+    .item>h3{
+        font-size: 30px;
+    }
+    .about-items{
+       padding-top:20px;
+    }
+    .item>p{
+        line-height: 40px;
+        font-size:22px ;
+    }
+
+    ul.info li div h3{
+        font-size: 18px;
+    }
+    
+     ul.info li div p{
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media(min-width:768px){
+    .about-page1 .left p{
+        display: block;
+    }
+    .about-page1 .right img.pc{
+        display: block;    
+    }
+
+    /* 地图 */
+    .site-box{
+        padding: 10px;
+    }
+
+    .site-right li div p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .site-right li div{
+        font-size: 14px;
+        padding-left: 10px;
+    }
+   
+}
+
+@media(min-width:768px) and (max-width:992px){
+    .about-items .col-md-4, .about-items .col-sm-12{
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .about-page1 .right img.pc{
+        height: 412px;
+    }
+    .about-page1 .left p{
+        line-height: 30px;
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    .item>h3{
+        font-size: 18px;
+        padding: 20px 0 5px;
+    }
+    .item>p{
+        line-height: 30px;
+        font-size: 16px;
+    }
+    
+    .about-items .col-md-4 ,.about-items .col-sm-12{
+        padding-right: 20px;
+    }
+    .item{
+        padding: 10px 12px 5px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    .about-page1 .left p{
+        font-size: 18px;
+        line-height: 46px;
+        padding-top: 0;
+    }
+    .about-page1 .right img.pc{
+        height: 500px;
+    }
+
+    .about-items .col-md-4 ,.about-items .col-sm-12{
+        padding-right: 15px;
+    }
+    .item{
+        padding: 20px 27px 16px;
+    }
+    .item>h3{
+        font-size: 24px;
+        padding: 20px 0 5px;
+    }
+    .item>p{
+        line-height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+
+@media(min-width:1200px){
+
+    .about-items .col-md-4 ,.about-items .col-sm-12{
+        padding-right: 60px;
+    }
+    .item{
+        padding: 40px 47px 26px;
+    }
+    .item>h3{
+        font-size: 16px;
+        padding: 40px 0 10px;
+    }
+    .item>p{
+        line-height: 34px;
+        font-size: 14px;
+    }
+    .about-page1 .right img.pc{
+        height: 570px;
+    }
+    /* 地图 */
+    #map{
+        height: 800px;
+    }
+    .site-box{
+        padding: 30px;
+    }
+
+    .site-right li div p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .site-right li div{
+        font-size: 18px;
+        padding-left: 20px;
+    }
+}
+
+
+@media(min-width:1500px){
+    .about-items .col-md-4 ,.about-items .col-sm-12{
+        padding-right: 100px;
+    }
+    .item>h3{
+        font-size: 20px;
+    }
+    .item>p{
+        font-size: 16px;
+    }
+}
+
+
+@media(min-width:1800px){
+    .about-items .col-md-4 ,.about-items .col-sm-12{
+        padding-right: 150px;
+    }
+
+    .item>h3{
+        font-size: 24px;
+    }
+
+    .item>p{
+        font-size: 18px;
+    }
+}

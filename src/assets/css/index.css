@@ -1,0 +1,465 @@
+/* 轮播图 */
+
+.carousel-indicators .active{
+    background-color: rgba(255,255,255,0.6);
+}
+.carousel-indicators{
+    bottom: 6%;
+}
+
+/* 行业应用标题 */
+.title-box{
+    margin: 115px auto 60px;
+    text-align: center;
+}
+
+.title-box>h3{
+    font-size: 24px;
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+.title-box>h2{
+    font-size: 30px;
+    color: #2D2D2D;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.cover-container{
+    position: relative;
+    cursor: pointer;
+}
+
+.cover{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+    color: #fff;
+    align-items: center;
+    background: rgba(15,15,15,0.3);
+}
+
+.cover>h5{
+    font-size: 16px;
+}
+
+.cover>a{
+    text-align: center;
+    color: #fff;
+    background: #085CFF;
+    border-radius:4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cover>span{
+    font-size: 12px;
+}
+
+.cover>span.line{
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.row .item img{
+    display: block;
+    width: 100%;
+}
+
+/* 服务 */
+
+
+#server-box >.row >.col-md-6{
+    padding: 0 25px;
+}
+.server-item{
+    border-radius:10px;
+    background: #fff;
+    box-shadow: 0px 6px 12px rgba(72, 128, 255, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.server-item>img{
+    margin-top: 116px;
+}
+
+.server-item>h4{
+    margin-top:85px;
+    font-size: 20px;
+    color: #000000;
+    font-weight:bold;
+}
+
+.server-item>p{
+   font-size: 18px;
+   color: #6F6F6F;
+   line-height: 60px;
+}
+
+
+
+
+
+
+@media (max-width:667px){
+    /* 行业应用标题 */
+    .title-box{
+        margin:0;
+    }
+    .title-box>h3{
+        font-size: 12px;
+        padding-top: 32px;
+    }
+    .title-box>h2{
+        padding: 8px 0 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    /* 行业应用列表 */
+
+    #list .row .col-sm-12{
+        padding: 0;
+    }
+    .cover{
+        justify-content: center;
+        padding: 5px 0;
+    }
+    .cover>h5{
+        font-size: 15px;
+    }
+    .cover>p{
+        font-size: 10px;
+        line-height: 20px;
+        padding: 20px 50px 0;
+    }
+
+    .cover>a{
+        padding: 5px 6px;
+        font-size: 9px;
+        margin: 10px 0 15px;
+    }
+    .cover>span.line{
+        margin-bottom: 7px;
+    }
+    .item{
+        margin-bottom: 3px;
+    }
+
+    /* 服务 */
+    #server-box{
+        padding: 0 14px;
+    }
+    #server-box >.row{
+        margin: 0;
+    }
+    #server-box>.row>div{
+        margin-bottom:0px;
+    }
+
+    .server-item{
+        padding: 14px 17px;
+        border:1px solid rgba(183,183,183,0.4);
+    }
+    .server-item>img{
+        margin-top: 0px;
+    }
+    #server-box >.row >.col-md-6{
+        padding: 0;
+    }
+    .server-item>h4{
+        margin-top:15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .server-item>p{
+        font-size: 11px;
+        line-height:30px;
+        padding: 10px 0 0;
+    }
+
+    #server-box .row .col-sm-12{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width:667px) and (max-width: 768px){
+    /* 轮播图指示器 */
+    .carousel-indicators li{
+        width: 10px;
+        height: 10px;
+        border-radius:50%;
+        background: #fff;
+        margin: 0 10px;
+    }
+
+    /* 行业应用标题 */
+    .title-box{
+        margin:0;
+    }
+    .title-box>h3{
+        font-size: 24px;
+        padding-top: 64px;
+    }
+    .title-box>h2{
+        padding: 15px 0 38px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    /* 行业应用列表 */
+
+    #list .row .col-sm-12{
+        padding: 0;
+    }
+    .cover{
+        justify-content: flex-end;
+        padding: 10px 0;
+    }
+    .cover>h5{
+        font-size: 30px;
+    }
+    .cover>p{
+        font-size: 20px;
+        line-height: 35px;
+        padding: 20px 150px 0;
+    }
+
+    .cover>a{
+    padding: 11px 13px;
+        font-size: 18px;
+        margin: 20px 0 30px;
+    }
+    .cover>span.line{
+        margin-bottom: 14px;
+    }
+    .item{
+        margin-bottom: 6px;
+    }
+
+    /* 服务 */
+    #server-box{
+        padding: 0 28px;
+    }
+    #server-box >.row{
+        margin: 0;
+    }
+    #server-box>.row>div{
+        margin-bottom:0px;
+    }
+
+    .server-item{
+        padding: 28px 35px;
+        border:1px solid rgba(183,183,183,0.4);
+    }
+    .server-item>img{
+        margin-top: 0px;
+    }
+    #server-box >.row >.col-md-6{
+        padding: 0;
+    }
+    .server-item>h4{
+        margin-top:30px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .server-item>p{
+        font-size: 22px;
+        line-height:60px;
+        padding: 20px 0 0;
+    }
+
+    #server-box .row .col-sm-12{
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (min-width: 768px){
+    #list .row{
+        padding: 0 20px;
+    }
+    
+    #list .row .item{
+      padding: 0 20px;
+    }
+
+    
+    .cover>p{
+        font-size: 14px;
+        padding: 10px;
+    }
+    .cover>a{
+        padding: 10px 20px;
+        margin: 10% 0  10%;
+        display: none;
+    }
+    .cover>span.line{
+        margin-bottom: 14px;
+        margin-top: 30px;
+    }
+    
+    
+}
+
+@media (min-width:768px) and (max-width:992px){
+    #list .row{
+        padding: 0 1%;
+    }
+    
+    #list .row .item{
+        padding: 0 1%;
+    
+    }
+    .item img{
+        height: 400px;
+    }
+   
+    .cover{
+        padding:20px 0;
+    }
+     .cover>h5{
+        font-size: 24px;
+    }
+    
+    .cover>p{
+        font-size: 20px;
+        margin-top: 30px;
+        line-height: 40px;
+        padding: 0 10%px;
+    }
+    .cover>a{
+        font-size: 18px;
+    }
+    
+    
+    .cover>span.line{
+        margin-bottom: 14px;
+        margin-top: 30px;
+    }
+
+    .item{
+        margin-bottom: 10px;
+    }
+     /* 服务 */
+     #server-box >.row{
+        margin: 0;
+    }
+    #server-box>.row>div{
+        margin-bottom: 20px;
+    }
+
+    .server-item{
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+    .server-item>img{
+        margin-top: 20px;
+    }
+    
+    .server-item>h4{
+        margin-top:20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .server-item>p{
+       font-size: 20px;
+       line-height:50px;
+       padding: 20px 30px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px){
+    #list .row{
+        padding: 0 10px;
+    }
+    
+    #list .row .item{
+      padding: 0 10px;
+    }
+    .cover h5{
+        font-size: 20px;
+    }
+    .cover p{
+        font-size: 16px;
+    }
+    .server-item>img{
+        margin-top: 50px;
+    }
+    .server-item>h4{
+        margin-top: 30px;
+        font-size: 28px;
+    }
+    .server-item>p{
+        padding: 0;
+        font-size: 24px;
+     }
+     .server-item{
+        padding: 0 30px 20px;
+    }
+}
+
+@media (min-width: 1200px){
+    .carousel-indicators li{
+        width: 80px;
+        height: 6px;
+        background: #fff;
+        margin: 0 30px;
+    }
+    #server-box >.row{
+        margin: 0 10%;
+    }
+
+   #list .row{
+        padding: 0 1%;
+    }
+    
+    #list .row .item{
+      padding: 0 2%;
+    }
+   
+     .cover>h5{
+        font-size: 24px;
+    }
+    .cover>p{
+        font-size: 16px;
+        margin-top: 30px;
+        line-height: 40px;
+        padding: 0 10%px;
+    }
+    .cover>a{
+        font-size: 18px;
+    }
+    
+    
+    .cover>span.line{
+        margin-bottom: 14px;
+        margin-top: 30px;
+    }
+
+
+    .server-item>p{
+        padding: 30px 0 60px;
+     }
+     .server-item{
+        padding: 0 75px;
+    }
+
+}
+

@@ -1,0 +1,29 @@
+{
+  //! presets: 预设，会在全局对象 window 上挂载，会造成全局变量污染；适合写业务程序
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "edge": "17",
+          "firefox": "60",
+          "chrome": "67",
+          "safari": "11.1"
+        },
+        "corejs": 2, //新版本需要指定核心库版本
+        "useBuiltIns": "usage" //按需注入
+      }
+    ]
+  ], //使用什么规则做转换
+   //! plugins: 插件，会以闭包的形式引入，不会造成全局变量污染；适合写业第三方库
+  // "plugins": [
+  //   "@babel/plugin-transform-rumtime",
+  //   {
+  //     "absoluteRuntime": false,
+  //     "corejs": false,
+  //     "helpers": true,
+  //     "regenerator": true,
+  //     "useESModules": false
+  //   }
+  // ]
+}

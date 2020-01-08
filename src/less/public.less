@@ -1,0 +1,140 @@
+
+
+/* 数字 */
+
+.num-box{
+    position: relative;
+    display: none;
+}
+.num-box>h1{
+    color: #000000;
+    font-weight: bold;
+    position: relative;
+    z-index: 9;
+}
+
+.num-box>span{
+	display: block;
+	height:0px;
+	position: absolute;
+}
+
+.title-box>h5{
+    color: #5C5C5C;
+}
+
+.title-box>h3{
+    color: #000000;
+    font-weight: bold;
+}
+
+.public-box{
+    padding: 7% 8% 0 12%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+ }
+
+ @media(max-width:576px){
+    .title-box{
+        text-align: center;
+    }
+    .title-box>h5{
+        font-size: 12px;
+    }
+    .title-box>h3{
+       color: #2D2D2D;
+       padding-top: 8px;
+       font-size: 12px;
+    }
+
+    .public-box{
+        padding: 0 28px;
+       
+      }
+ }
+
+@media (max-width:576px){
+    .num-title{
+        padding-top: 25px;
+    }
+} 
+
+@media (min-width:576px) and (max-width:767px){
+    .title-box{
+        text-align: center;
+    }
+    .title-box>h5{
+        font-size: 24px;
+    }
+    .title-box>h3{
+       color: #2D2D2D;
+       padding-top: 16px;
+       font-size: 24px;
+    }
+
+    .public-box{
+        padding: 0 28px;
+      }
+}
+
+@media (min-width:768px){
+    .num-box{
+        display: block;
+    }
+    .num-box>h1{
+        font-size: 50px;
+    }
+    .num-box>span{
+        width: 50px;
+        border-bottom:#085CFF solid 4px;
+        left: 3px;
+        bottom: 10px;
+    }
+    .title-box>h5{
+        font-size: 18px;
+        line-height: 30px;  
+    }
+    .title-box>h3{
+        font-size: 24px;  
+        line-height: 40px;  
+    }
+
+    /* .public-box{
+        padding: 60px 0 0;
+      } */
+}
+
+@media (min-width:1200px){
+    .num-box>h1{
+        font-size: 5rem;
+    }
+    
+    .num-box>span{
+        width:5rem;
+        bottom: 0.9rem;
+        border-bottom:#085CFF solid 0.5rem;
+        left: 0.4rem;
+    }
+    
+    .title-box>h5{
+        font-size: 24px;
+        line-height:40px;
+    }
+    
+    .title-box>h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    /* .public-box{
+       padding: 100px 0 0;
+     } */
+    
+}
+
+
+@media (min-width:1450px){
+    .public-box{
+        max-width: 1400px;
+     }
+}

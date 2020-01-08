@@ -1,0 +1,495 @@
+/* tabs */
+.tab-box{
+    width:100%;
+    box-sizing: border-box;
+}
+.tabs{
+    border-radius:4px;
+    background: #fff;
+    box-shadow: 0px 6px 12px rgba(72, 128, 255, 0.3);
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    z-index: 9;
+}
+.tabs li{
+    flex: 1;
+    border-right: 1px solid rgba(92,92,92,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs li:last-child{
+    border-right: none;
+}
+
+.tabs li>p{
+    color: #5C5C5C;
+}
+.tabs li>h3{
+    color: #5C5C5C;
+    font-weight: bold;
+}
+
+.tabs li>span{
+    background: #fff;
+    -moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+
+/* 点击后状态 */
+.tabs li:hover span{
+    background:rgba(8,92,255,1);
+}
+.tabs li:hover p,.tabs li:hover h3{
+    color: #000000;
+}
+
+.tabs li.tab>span{
+    background:rgba(8,92,255,1);
+}
+.tabs li.tab p,.tabs li.tab h3{
+    color: #000000;
+}
+
+/* 系统架构 */
+
+.industry-imgs{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgba(220,220,220,0.4);
+    margin-top: 30px;
+    display: none;
+}
+
+ /* 系统简介 */
+ .system-text-pc{
+     color: #494949;
+     font-size: 18px;
+     display: none;
+ }
+
+ .system-text-mobile{
+    margin-top:20px;
+    color: #494949;
+    font-size: 12px;
+    line-height: 35px;
+    display: none;
+ }
+
+/* 系统优势 */
+.system-box{
+    background: #fff;
+    box-shadow: 0px 6px 12px rgba(72, 128, 255, 0.3);
+    margin-top: 40px;
+}
+
+.system-item{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.system-item h5{
+    color: #000000;
+    font-weight: bold;
+}
+.system-item p{
+    text-align: left;
+    color: #5C5C5C;
+
+}
+.right-line{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background:rgba(92,92,92,0.2);
+    display: none;
+}
+.botton-line{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:rgba(92,92,92,0.2);
+    display: none;
+}
+/* 人工巡检vs智能化巡检 */
+.four-img {
+    position: relative;
+}
+.four-img span{
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.four-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-tab{
+    flex: 1;
+}
+.text-tab h3{
+    color: #5B5B5B;
+    text-align: center;
+}
+.text-tab div{
+    color: #5B5B5B;
+   
+}
+.select-tab>h3{
+    color: #000000;
+}
+.active-span{
+    color: #085CFF;
+}
+
+
+
+@media(max-width:767px){
+    .tabs li{
+        margin: 10px 0;
+    }
+    .tabs{
+        margin-top: -35px;
+        height: 70px;
+    }
+    .tabs li>span{
+        width:17px;
+        height:2px;
+        margin-top: 5px;
+    }
+    .tabs li>p{
+        font-size: 8px;
+        line-height: 20px;
+    }
+    .tabs li>h3{
+        font-size: 9px;
+        padding-top: 3px;
+    }
+    /* 系统架构 */
+    .industry-imgs{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .industry-imgs img{
+        height: 150px;
+    }
+    .line{
+        display: block;
+    }
+    /* 系统简介 */
+    .system-text-mobile{
+       display: block;
+    }
+    /* 系统优势 */
+    .system-box{
+        box-shadow: 0px 0px 0px #fff;
+    }
+    .system-item{
+        border:1px solid rgba(183,183,183,0.4);
+        margin-bottom: 20px;
+        padding: 0 50px 25px;
+    }
+    .system-item img{
+        width: 45px;
+        height: 45px;
+        margin-top: 31px;
+    }
+    .system-item h5{
+        font-size: 15px;
+        padding-top: 33px;
+    }
+    .system-item p{
+        font-size: 11px;
+        line-height: 24px;
+        padding-top: 10px;
+    }
+
+    
+     /* 人工巡检vs智能化巡检 */
+     .four-img {
+        margin-top:15px;
+    }
+    .four-img span{
+        font-size: 35px;
+    }
+    .four-text{
+        margin-top:20px;
+    }
+    .four-text .text-tab:first-child{
+        border-right: 1px solid rgba(92,92,92,0.1);
+        padding-right: 14px;
+    }
+
+    .four-text .text-tab:last-child{
+        padding-left: 14px;
+    }
+   
+    .text-tab h3{
+        font-size: 15px;
+    }
+    .text-tab div{
+        font-size: 9px;
+        padding: 13px 0 0;
+        line-height: 25px;
+    }
+    
+}
+
+
+@media (min-width:576px) and (max-width:768px){
+    .container{
+        max-width: 100%;
+    }
+    .tabs li>p{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .tabs li>h3{
+        font-size: 16px;
+        padding-top: 6px;
+    }
+    .system-text-mobile{
+        font-size: 20px;
+        line-height: 40px;
+    } 
+    /* 系统架构 */
+    .industry-imgs{
+        margin-top: 30px;
+    }
+    
+    /* 系统优势 */
+    
+    .system-item h5{
+        font-size: 28px;
+    }
+    .system-item p{
+        font-size: 22px;
+        line-height: 30px;
+        padding-top: 15px;
+    }
+
+    
+     /* 人工巡检vs智能化巡检 */
+     .four-img {
+        margin-top:20px;
+    }
+    .four-img span{
+        font-size: 50px;
+    }
+
+    .text-tab h3{
+        font-size: 28px;
+    }
+    .text-tab div{
+        font-size: 18px;
+        padding: 20px 0 0;
+        line-height: 30px;
+    }
+
+    .tabs{
+        margin-top: -40px;
+        height: 80px;
+    }
+    
+}
+
+
+@media (min-width:768px){
+    .tab-box{
+        padding-top: 0;
+     }
+    .tabs{
+        margin-top: -53px;
+    }
+    .tabs li{
+        margin: 20px  0;
+    }
+    .tabs li>span{
+        width:30px;
+        height:4px;
+        margin-top: 10px;
+    }
+    .tabs li>p{
+        font-size: 14px;
+    }
+    .tabs li>h3{
+        font-size: 18px;
+        padding-top: 3px;
+    }
+    /* 系统简介 */
+    .system-text-pc{
+       display: block;
+    }
+    .system-text-pc>p{
+        line-height: 55px;
+        font-size: 18px;
+    }
+     /* 系统优势 */
+     .system-item img{
+        margin-top: 20px;
+     }
+     .system-item h5{
+         padding: 20px;
+         font-size: 20px;
+     }
+     .system-item p{
+         padding: 10px;
+         font-size: 16px;
+         line-height: 30px;
+     }
+     .right-line,.botton-line{
+         display: block;
+     }
+
+     /* 人工巡检vs智能化巡检 */
+    .four-img {
+        margin-top:20px;
+    }
+    .four-img span{
+        font-size: 2rem;
+    }
+    .four-text{
+        margin-top:20px;
+    }
+    
+    .text-tab h3{
+        font-size: 18px;
+    }
+    .text-tab div{
+        font-size: 20px;
+        padding: 10px 20px 0;
+        line-height: 40px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:992px){
+    .tabs{
+        margin-top: -65px;
+        height: 130px;
+    }
+    .tabs li{
+        margin: 20px  0;
+    }
+}
+@media (min-width:992px){
+     .tabs{
+        margin-top: -80px;
+        height: 160px;
+    }
+    .tabs li{
+        margin: 30px  0;
+    }
+    .tabs li p{
+        font-size: 24px;
+    }
+
+    .tabs li h3{
+        font-size: 28px;
+        padding-top: 15px;
+    }
+    .tabs .tab span{
+        width:60px;
+        margin-top: 15px;
+    }
+    /* 系统简介 */
+    .system-text-pc>p{
+        line-height: 60px;
+        font-size: 24px;    }
+    /* 系统优势 */
+    .system-item img{
+        margin-top: 50px;
+     }
+     .system-item h5{
+         padding: 50px;
+         font-size: 24px;
+     }
+     .system-item p{
+         padding: 30px;
+         font-size: 18px;
+         line-height: 48px;
+     }
+}
+
+@media (min-width:1200px){
+    .tabs{
+        margin-top: -90px;
+    }
+    .tabs li{
+        margin: 40px  0;
+    }
+    .tabs li>span{
+        width:67px;
+        height:8px;
+        margin-top: 22px;
+    }
+    .tabs li>p{
+        font-size: 30px;
+    }
+    .tabs li>h3{
+        font-size: 36px;
+        padding-top: 9px;
+    }
+     /* 系统简介 */
+     .system-text-pc>p{
+        line-height: 72px;
+        font-size: 18px;
+    }
+    /* 人工巡检vs智能化巡检 */
+    .four-img {
+        margin-top:50px;
+    }
+    .four-img span{
+        font-size: 5rem;
+    }
+    .four-text{
+        margin-top:50px;
+    }
+    
+    .text-tab h3{
+        font-size: 24px;
+    }
+    .text-tab div{
+        font-size: 18px;
+        padding: 25px 150px 0;
+        line-height: 40px;
+    }
+
+}
+
+@media (min-width:1450px){
+    .tab-box{
+        max-width: 1400px;
+    }
+    .tabs li{
+        margin: 20px  0;
+    }
+}
